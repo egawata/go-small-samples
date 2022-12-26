@@ -6,6 +6,8 @@ import (
 	"go/parser"
 	"go/token"
 	"log"
+
+	"github.com/egawata/go-small-samples/imported-packages/sample"
 )
 
 /*
@@ -33,4 +35,7 @@ func main() {
 			}
 		}
 	}
+
+	v := sample.RandInt64()
+	fmt.Println(v)
 }
